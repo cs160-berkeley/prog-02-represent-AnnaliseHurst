@@ -4,7 +4,7 @@ Briefly describe your app here.
 
 ## Authors
 
-FirstName LastName ([your_email@berkeley.edu](mailto:your_email@berkeley.edu))
+Annalise Hurst ([anhurst@berkeley.edu](mailto:anhurst@berkeley.edu))
 
 ## Demo Video
 
@@ -16,5 +16,8 @@ See [your demo video title here] (https://link_to_your_video)
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Any other support
+TA's Catnip skeleton code for phone to watch and watch to phone functionallity.
+How I set up shake functionality http://code.tutsplus.com/tutorials/using-the-accelerometer-on-android--mobile-22125. 
+How I set up 2D picker http://www.sprima.com/blog/?p=144.
+Page Dots http://stackoverflow.com/questions/26247343/how-to-add-page-dots-for-2d-pickers-in-android-wear.
+
