@@ -1,6 +1,6 @@
 # PROG 02: Represent!
 
-Briefly describe your app here.
+First draft of my Represent! app that lets you view information for representatives from different areas. It allows you to enter your ZIP code, use current location or shake for a random location to view the two US Senators and one or two House Representatives for that area. This app supports watch and phone communication to show different views of the represenattives info.
 
 ## Authors
 
@@ -8,11 +8,16 @@ Annalise Hurst ([anhurst@berkeley.edu](mailto:anhurst@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [Represent!] (https://youtu.be/UC58QB38LTE)
 
 ## Screenshots
 
-<img src="screenshots/main.png" height="400" alt="Screenshot"/>
+<img src="screenshots/s1.png" height="400" alt="Screenshot"/>
+<img src="screenshots/s2.png" height="400" alt="Screenshot"/>
+<img src="screenshots/s3.png" height="400" alt="Screenshot"/>
+<img src="screenshots/s4.png" height="400" alt="Screenshot"/>
+<img src="screenshots/s5.png" height="400" alt="Screenshot"/>
+<img src="screenshots/s6.png" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
 
