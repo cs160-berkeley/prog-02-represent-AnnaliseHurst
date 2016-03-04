@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.annalise.represent.CongressionalView"
+    tools:showIn="@layout/activity_congressional_view"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="US Senators"
+                android:id="@+id/ussenators"
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textIsSelectable="false"
+                android:textAlignment="textStart"
+                android:paddingTop="5dp"
+                android:paddingLeft="15dp"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="301dp"
+                android:id="@+id/replistview1">
+
+            </ListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="House Representatives"
+                android:id="@+id/housereps"
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textIsSelectable="false"
+                android:textAlignment="textStart"
+                android:paddingTop="5dp"
+                android:paddingLeft="15dp"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="301dp"
+                android:id="@+id/replistview2">
+
+            </ListView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

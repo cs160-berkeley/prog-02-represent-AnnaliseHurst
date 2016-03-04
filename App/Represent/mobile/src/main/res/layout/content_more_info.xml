@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.annalise.represent.MoreInfo"
+    tools:showIn="@layout/activity_more_info"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3"
+        android:layout_alignParentEnd="true">
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/b"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dframe"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="230dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barbara Boxer"
+                android:id="@+id/textView"
+                android:textSize="28dp"
+                android:textIsSelectable="true"
+                android:textColor="#000000"
+                android:paddingTop="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Democratic Party"
+                android:id="@+id/textView2"
+                android:textSize="20dp"
+                android:textIsSelectable="false"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End date of term"
+                android:id="@+id/textView3"
+                android:textSize="20dp"
+                android:textIsSelectable="false"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:fillViewport="false"-->
+        <!--android:id="@+id/scrollView"-->
+        <!--android:layout_below="@+id/linearLayout3">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Current Committees"
+                    android:id="@+id/committees"
+                    android:background="@color/democrat"
+                    android:textColor="#ffffff"
+                    android:textSize="28dp"
+                    android:textIsSelectable="false"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignParentStart="true" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:id="@+id/comview"></ListView>
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:text="Committee 1"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textIsSelectable="true" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:id="@+id/imageView2"-->
+                    <!--android:background="@color/colorAccent"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:text="Committee 2"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:id="@+id/textView4"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:textSize="16dp" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:id="@+id/imageView3"-->
+                    <!--android:background="@color/colorAccent"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:text="Committee 3"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:id="@+id/textView5"-->
+                    <!--android:layout_below="@+id/textView4"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:textSize="16dp" />-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Sponsored Bills"
+                    android:id="@+id/bills"
+                    android:background="@color/democrat"
+                    android:textColor="#ffffff"
+                    android:textSize="28dp"
+                    android:textIsSelectable="false"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignParentStart="true" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:id="@+id/billview"></ListView>
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:text="Bill 1"-->
+                    <!--android:id="@+id/bill1"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textIsSelectable="true" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:text="Date Introduced"-->
+                    <!--android:id="@+id/datei1"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:textIsSelectable="true" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:id="@+id/imageView6"-->
+                    <!--android:background="@color/colorAccent"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:text="Bill 2"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:id="@+id/textView7"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:textSize="16dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:text="Date Introduced"-->
+                    <!--android:id="@+id/datei2"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:textIsSelectable="true" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:id="@+id/imageView8"-->
+                    <!--android:background="@color/colorAccent"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:text="Bill 3"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:id="@+id/textView9"-->
+                    <!--android:layout_below="@+id/textView4"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:textSize="16dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:text="Date Introduced"-->
+                    <!--android:id="@+id/datei3"-->
+                    <!--android:paddingTop="8dp"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:textIsSelectable="true" />-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+
+
+</RelativeLayout>

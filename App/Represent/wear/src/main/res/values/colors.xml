@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#898d91</color>
+    <color name="outlines">#e8e8e8</color>
+    <color name="democrat">#80b6ff</color>
+    <color name="republican">#ff7f7f</color>
+    <color name="independent">#c17fff</color>
+</resources>
