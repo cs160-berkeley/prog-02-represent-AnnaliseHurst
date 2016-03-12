@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_centerHorizontal="true"
+    android:weightSum="14">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:paddingLeft="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/repimage"
+        android:padding="2dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/repframe" />
+    </FrameLayout>
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="12">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:id="@+id/name"
+    android:textColor="#000000"
+    android:textSize="28dp"
+    android:textIsSelectable="true"
+    android:paddingLeft="10dp" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/twithand"
+    android:textSize="12dp"
+    android:textIsSelectable="true"
+    android:paddingLeft="10dp"
+        android:paddingTop="-2dp"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tweet"
+    android:textSize="12dp"
+    android:textIsSelectable="true"
+    android:layout_weight="1"
+    android:paddingLeft="10dp"
+        android:paddingTop="-2dp"/>
+    </LinearLayout>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:id="@+id/time"
+    android:textSize="12dp"
+    android:textIsSelectable="true"
+    android:layout_gravity="center_vertical"
+    android:paddingTop="-2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_centerHorizontal="true"
+    android:weightSum="3">
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Email"
+    android:id="@+id/email"
+    android:layout_weight="1"
+        android:onClick="showemail"
+        android:singleLine="true"
+        style="@style/Base.Theme.AppCompat.Light"
+        android:allowUndo="false"
+        android:backgroundTint="@color/outlines" />
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Website"
+    android:id="@+id/website"
+    android:layout_weight="1"
+        android:onClick="showweb"
+        android:singleLine="true"
+        style="@style/Base.Theme.AppCompat.Light"
+        android:backgroundTint="@color/outlines" />
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="More Info"
+    android:id="@+id/moreinfo"
+    android:layout_weight="1"
+    android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        style="@style/Base.Theme.AppCompat.Light"
+        android:backgroundTint="@color/outlines" />
+    </LinearLayout>
+
+</LinearLayout>

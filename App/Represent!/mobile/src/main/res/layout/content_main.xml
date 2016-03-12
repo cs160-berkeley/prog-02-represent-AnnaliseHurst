@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.annalise.represent.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/repbackground">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#ffffff"
+        android:alpha="0.9"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Welcome to Represent!"
+            android:id="@+id/welcometorep"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Please select one of the following
+            options to view the congressional
+            representatives for that area."
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:id="@+id/repinfo"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#ffffff"
+        android:layout_marginTop="120dp"
+        android:alpha="0.9"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/zipcode"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:hint="ZIP Code"
+            android:singleLine="true"
+            android:paddingTop="20dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Use Current Location"
+            android:textSize="15dp"
+            android:id="@+id/curlocation"
+            android:layout_gravity="center_horizontal"
+            android:alpha="0.9"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:onClick="showreps"
+            android:singleLine="true"
+            style="@style/Base.Theme.AppCompat.Light"
+            android:allowUndo="false"
+            android:backgroundTint="@color/outlines"/>
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="New Text"-->
+        <!--android:id="@+id/ltv"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="New Text"-->
+        <!--android:id="@+id/lotv"-->
+        <!--android:layout_below="@+id/ltv" />-->
+
+</RelativeLayout>

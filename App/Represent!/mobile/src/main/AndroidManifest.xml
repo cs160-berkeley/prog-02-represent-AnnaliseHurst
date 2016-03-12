@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.annalise.represent">
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="API_KEY"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CongressionalView"
+            android:label="@string/title_activity_congressional_view"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.annalise.represent.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MoreInfo"
+            android:label="@string/title_activity_more_info"
+            android:parentActivityName=".CongressionalView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.annalise.represent.CongressionalView" />
+        </activity>
+        <service android:name=".PhoneToWatchService" />
+
+        <service android:name=".PhoneListenerService"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7431f8499f5f24e88ed76de400d09dcc23c5d0f3" />
+        <meta-data
+            android:name="com.google.API_KEY"
+            android:value="AIzaSyAkLAMlQF64UJQIJqPy_B2_0C5Di34baH4"/>
+    </application>
+
+</manifest>

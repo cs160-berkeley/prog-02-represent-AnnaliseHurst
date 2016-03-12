@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.annalise.represent.MoreInfo"
+    tools:showIn="@layout/activity_more_info"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3"
+        android:layout_alignParentEnd="true">
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/picture"/>
+                <!--android:background="@drawable/b"/>-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frame"/>
+                <!--android:background="@drawable/dframe"/>-->
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="230dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textSize="28dp"
+                android:textIsSelectable="true"
+                android:textColor="#000000"
+                android:paddingTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/party"
+                android:textSize="20dp"
+                android:textIsSelectable="false"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:textSize="20dp"
+                android:textIsSelectable="false"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Current Committees"
+                    android:id="@+id/committees"
+                    android:textColor="#ffffff"
+                    android:textSize="28dp"
+                    android:textIsSelectable="false"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignParentStart="true" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:id="@+id/comview"></ListView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Sponsored Bills"
+                    android:id="@+id/bills"
+                    android:textColor="#ffffff"
+                    android:textSize="28dp"
+                    android:textIsSelectable="false"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignParentStart="true" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:id="@+id/billview"></ListView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
